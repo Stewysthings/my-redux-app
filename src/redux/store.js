@@ -15,7 +15,7 @@ import Geolocation from '@react-native-community/geolocation';
 import React from 'react';
 import { Button, Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { saveCheckIn } from './redux/checkinSlice';
+import { saveCheckIn } from './checkinSlice';
 
 export default function CheckIn() {
   const dispatch = useDispatch();
