@@ -2,6 +2,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from './redux/counterSlice';
 
+
 export default function Counter() {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
