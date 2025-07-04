@@ -1,18 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
-import checkinReducer from './checkinSlice';
-import counterReducer from './counterSlice';
-
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-    checkin: checkinReducer,
-  },
-});
-
-
-
 import Geolocation from '@react-native-community/geolocation';
-import React from 'react';
 import { Button, Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { saveCheckIn } from './redux/checkinSlice';
@@ -44,5 +30,3 @@ export default function CheckIn() {
     </View>
   );
 }
-
-
